@@ -37,12 +37,13 @@ Sysy2020语言是在`2022`年全国大学生计算机系统能力大赛编译系
 
 具体要完成的语法规则，是SysY语言(2022版)定义中的stmt语法部分：
 语句 
+```
 Stmt → LVal '=' Exp ';' | [Exp] ';' | Block
 | 'if' '(' Cond ')' Stmt [ 'else' Stmt ]
 | 'while' '(' Cond ')' Stmt
 | 'break' ';' | 'continue' ';'
 | 'return' [Exp] ';'
-
+```
 将上述产生式转换成bison的语法规则(Grammar Rule),并关联语义动作，创建抽象语法树。
 
 将产生式转换BISON的语法规则时，类似下列含有任选项[Exp](Exp可以出现一次或不出现)的产生式：
