@@ -1,0 +1,5 @@
+//case4.sy
+int main() {
+    int a = 10;
+    iif (a == 10) return 0; else return 1;
+}

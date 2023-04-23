@@ -1,0 +1,6 @@
+//case3.sy
+int main() {
+    int a[2,3] = {0,0,0,0,0,0};
+    float b = 2.3f;
+    return 1;
+}

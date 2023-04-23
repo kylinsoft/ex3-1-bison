@@ -1,0 +1,9 @@
+/* 这类测试用例前两届赛事中从未出现过。今年一定会出现
+*/
+
+ int main() {
+   int a = 1;
+   int b = 2;
+   if (!(a > b)) return a; 
+   return b;
+}

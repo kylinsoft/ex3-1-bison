@@ -1,0 +1,8 @@
+//case2.sy
+int main() {
+    int a;
+    float b;
+    a = 10; b = a + 20.0;
+    (a > b ) b = a; else b = 0;
+    return 0;
+}
