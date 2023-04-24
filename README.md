@@ -47,10 +47,15 @@ Stmt → LVal '=' Exp ';' | [Exp] ';' | Block
 将上述产生式转换成bison的语法规则(Grammar Rule),并关联语义动作，创建抽象语法树。
 
 将产生式转换BISON的语法规则时，类似下列含有任选项[Exp](Exp可以出现一次或不出现)的产生式：
+
 Stmt → [Exp] ';'
+
 应将其改为两个产生式：
+
 Stmt → ';'  //Exp不出现
+
 Stmt → Exp ';' //Exp可以出现一次
+
 注意，转换成bison语法规则时，终结符';'用相应的Token代号(SEMICOLON)取代。
 
 ### 字段说明
