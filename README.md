@@ -95,7 +95,7 @@ ASTNode *new_node(node_type type,
 
 node_type的定义：
 
-···cpp
+```cpp
 typedef enum node_type {
     CompUnit,
     ConstDecl,
