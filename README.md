@@ -146,6 +146,7 @@ typedef enum node_type {
 ```
 
 ### 编译提示：
+```shell
 cd src
 make clean
 ./cgen.sh 
@@ -153,4 +154,4 @@ make
 测试提示：
 ./parser ../testcases/case1.sy
 ./parser ../testcases/087_gcd.sy
-...
+```
