@@ -1,3 +1,4 @@
+```cpp
 // AST节点(最多三个子节点：lef,mid,right,当只有两节点时，置mid为null,只有一个子节点时，赋值给right)
 // type是节点类型,比如Root,CompUnit,Stmt等。
 // int_val用于具体的Stmt种类，如IfStmt, IfElseStmt,WhileStmt等，
@@ -87,3 +88,4 @@ ASTNode *new_node(node_type type,
                  float float_val, 
                  char *symbol, 
                  node_type d_type);
+```                 
