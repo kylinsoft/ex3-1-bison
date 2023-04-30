@@ -78,10 +78,11 @@ typedef struct ASTNode {
 }ASTNode;
 ```
 
+```cpp
 // 创建AST子树，由于所有节点共用一个函数，不是每个字段对每类节点都有意义
 // 对不需要的字段分别为Null, 0, NonType等即可.
 // 1个Child,用right; 两个用left,right； 三个用left,mid,right.
-```cpp
+
 ASTNode *new_node(node_type type, 
                  ASTNode *left, 
                  ASTNode *mid, 
